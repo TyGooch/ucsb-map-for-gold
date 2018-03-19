@@ -1,17 +1,17 @@
 {
   "manifest_version": 2,
- 
+
   "name": "UCSB Gold Map",
   "version": "0.1.0",
   "description": "Adds links to courses to view on UCSBMap.com",
- 
+
   "content_scripts": [
     {
       "matches": ["https://my.sa.ucsb.edu/gold/StudentSchedule.aspx"],
       "js": ["scripts/changeLink.js"]
     },
     {
-      "matches": ["https://my.sa.ucsb.edu/gold/ResultsFindCourses.aspx"],
+      "matches": ["https://my.sa.ucsb.edu/gold/WeeklyStudentSchedule.aspx"],
       "css": ["assets/styles.css"],
       "js": ["scripts/addLink.js"]
     }
